@@ -1,6 +1,6 @@
 # Summary
 
-* [MariHacks](README.md)
+* [MariHacks Hacker Booklet](README.md)
 * [The First Steps](section_1_the_first_steps/README.md)
   * [Programi-What?](section_1_the_first_steps/programi-what.md)
   * [Where to Write Your Code](section_1_the_first_steps/where_to_write_your_code.md)

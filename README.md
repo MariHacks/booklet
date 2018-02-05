@@ -1,4 +1,4 @@
-# MariHacks {#marihacks}
+# MariHacks Hacker Booklet {#marihacks}
 
 **Welcome to the Hacker Booklet!!!** As we know that many of you are first time hackers, we have created this booklet to assist you throughout MariHacks. Experienced hackers are welcome too!
 
@@ -11,8 +11,6 @@ This booklet contains short tutorials as well as numerous references to lead you
 * [Dive Into Your Projects](/section_2_dive_into_your_projects/README.md)
 
 * [Implement Cooler Stuff!](/section_3_implement_cooler_stuff/README.md)
-
-
 
 ![](/assets/programming-meme.jpg)
 
