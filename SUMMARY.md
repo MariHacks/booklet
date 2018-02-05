@@ -1,16 +1,16 @@
 # Summary
 
 * [MariHacks](README.md)
-* [Section 1: The first steps](section_1_the_first_steps/programi-what.md)
+* [Section 1: The first steps](section_1_the_first_steps/README.md)
   * [Programi-What?](section_1_the_first_steps/programi-what.md)
   * [Where to Write Your Code](section_1_the_first_steps/where_to_write_your_code.md)
   * [A good language to start: Python](section_1_the_first_steps/a_good_language_to_start_python.md)
   * [Collaborating and Sharing Code with Github](section_1_the_first_steps/collaborating_and_sharing_code_with_github.md)
-* [Section 2: Dive into your projects](section_2_dive_into_your_projects/get_started_with_web_development.md)
+* [Section 2: Dive into your projects](section_2_dive_into_your_projects/README.md)
   * [Get Started with Web Development](section_2_dive_into_your_projects/get_started_with_web_development.md)
   * [Get Started with Game Development](section_2_dive_into_your_projects/get_started_with_game_development.md)
   * [Get Started with Databases](section_2_dive_into_your_projects/get_started_with_databases.md)
   * [Learning a new Programming Language?](section_2_dive_into_your_projects/learning_a_new_programming_language.md)
-* [Section 3: Implement cooler stuff!](section_3_implement_cooler_stuff/implement_projects_with_machine_learning.md)
+* [Section 3: Implement cooler stuff!](section_3_implement_cooler_stuff/README.md)
   * [Implement Projects with Machine Learning](section_3_implement_cooler_stuff/implement_projects_with_machine_learning.md)
 
