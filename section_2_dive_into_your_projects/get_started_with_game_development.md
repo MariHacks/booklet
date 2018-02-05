@@ -1,4 +1,4 @@
-## Get Started with Game Development {#get-started-with-game-development}
+## Game Development {#get-started-with-game-development}
 
 Making games from scratch is hard. For example, simply implementing the physics behind a game takes a lot of work. Thankfully, there are game engines that do a lot of the work for us. There are three popular game engines: GameMaker, Unity and Unreal Engine.
 

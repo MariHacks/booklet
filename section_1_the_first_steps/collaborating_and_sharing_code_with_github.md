@@ -1,10 +1,10 @@
-## Collaborating and Sharing Code with Github {#collaborating-and-sharing-code-with-github}
+## GitHub – Collaborating and Sharing Code {#collaborating-and-sharing-code-with-github}
 
 If you are working as a team then you really should use Github!
 
-Github is one of the most important tool for sharing code to the general public, and collaborating with your friends on programming projects. Either you use it as a public dropbox, or as a tool for an advanced Software Development project, GitHub offers a range of functions that will make your life easier.
+GitHub is one of the most important tool for sharing code to the general public, and collaborating with your friends on programming projects. Either you use it as a public dropbox, or as a tool for an advanced Software Development project, GitHub offers a range of functions that will make your life easier.
 
-To get started you and all your friends will need to make yourselves a gitHub account. Then one of you will need to create a new repository \(the Github term for project or constellation of files\).
+To get started you and all your friends will need to make yourselves a GitHub account. Then one of you will need to create a new repository \(the GitHub term for project or constellation of files\).
 
 This is done by clicking on the little plus button in the top right and then clicking on “New repository”.
 
@@ -14,7 +14,7 @@ The next step is to allow your friends to contribute to your repository:
 
 This is done by then clicking on the “Settings” tab in the bar just above the repository name. Then clicking on “Collaborators” in the menu on the left hand side and finally inviting your friends by writing their GitHub name in the search bar and clicking invite.
 
-Now you need to install [Github for desktop](https://desktop.github.com/)
+Now you need to install [GitHub for desktop](https://desktop.github.com/)
 
 You can enter your credentials and login.
 
@@ -32,5 +32,5 @@ Free GitHub for [students](https://education.github.com/pack)
 
 Learning Git, the language behind GitHub, is good if you want to accelerate your development. It also help you understand better how GitHub works.
 
-Read “"[Pro Git](https://git-scm.com/book/en/v2)"
+Read "[Pro Git](https://git-scm.com/book/en/v2)"
 

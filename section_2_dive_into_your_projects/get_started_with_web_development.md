@@ -1,8 +1,21 @@
-## Get Started with Web Development {#get-started-with-web-development}
+## Web Development {#get-started-with-web-development}
 
 Building a website or a web application is no simple task. It’s a process with a whole lot of steps. However, fret not, there are plenty of tools to help you in this process. The task of a web developer can be mainly divided into 2 parts: front-end and rear-end. Front-end refers to the part of the website that the visitor can see and interact with \(the client\), while rear-end refers to the server-side mechanisms that interact with the databases and other cloud services \(the server\).
 
 A great resource that can help you get started with web development is [Free Code Camp](https://www.freecodecamp.org). To have a solid foundation in web development, doing the HTML5 and CSS \(5 hours\) as well as the Basic Javascript \(10 hours\) courses would be a great start. Once you finished those, you can look into other courses such as Bootstrap and jQuery to sharpen your skills. There are also some courses on Node.js and React.js available.
+
+**Outline:**
+
+* [HTML \(HyperText Markup Language\)](#html-hypertext-markup-language)
+* [CSS \(Cascading Style Sheets\)](#css-cascading-style-sheets)
+* [JavaScript](#javascript)
+* [Learn Front-End](#learn-front-end)
+* * [jQuery](#jquery)
+  * [AngularJS](#angularjs)
+  * [React.js](#react-js)
+* [Learn Rear-End](#learn-rear-end)
+  * [Node.js](#node-js)
+  * [PHP](#php)
 
 ### HTML \(HyperText Markup Language\) {#html-hypertext-markup-language}
 
@@ -18,25 +31,15 @@ Beginner’s [guide](https://www.w3schools.com/css/)
 
 Exhaustive list of CSS properties found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-### Javascript {#javascript}
+### JavaScript {#javascript}
 
-Javascript is extremely popular and versatile programming language. Traditionally, Javascript is used along with HTML and CSS for front-end development. However, there are many frameworks for Javascript out there which simplify and extend its implementation. With the right framework, Javascript can be used almost everywhere, front-end and rear-end. That’s why it’s a good idea to get familiar with this language before the hackathon.
+JavaScript is extremely popular and versatile programming language. Traditionally, JavaScript is used along with HTML and CSS for front-end development. However, there are many frameworks for JavaScript out there which simplify and extend its implementation. With the right framework, Javascript can be used almost everywhere, front-end and rear-end. That’s why it’s a good idea to get familiar with this language before the hackathon.
 
-There are plenty of resources to learn vanilla Javascript on the web that are available with a simple Google search. [Here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) is a good place to start with. 
+There are plenty of resources to learn vanilla JavaScript on the web that are available with a simple Google search. [Here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) is a good place to start with. You can also try [W3Schools](https://www.w3schools.com/js/).
 
 Complete [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
-### Learning JavaScript and HTML/CSS? {#learning-javascript-and-html-css}
-
-JavaScript is probably one of the hottest language at the moment. It is widely used in web development, both for front-end \(what the user interacts with\), and the back-end \(all the code that control the servers and databases\). Section 2 will go more in depth about all the frameworks and libraries based on JavaScript.
-
-A good way to get started with HTML/CSS and JavaScript before the event starts is to go through the first part of freeCodeCamp’s web development [course](https://www.freecodecamp.org/). You can quickly create an account and learn the basics of HTML, CSS and JavaScript in an afternoon. Alternatively, if you want to skip the HTML and CSS, you can quickly learn JavaScript with [W3Schools](https://www.w3schools.com/js/)
-
-Although learning formally Javascript is great in the long term, for the hackathon it is a lot more fun to just jump straight into the code and modify it until it does what you want. However, if you want to formally get started with JavaScript, [eloquent JavaScript](http://eloquentjavascript.net/index.html) is a very complete textbook that also teach you useful framework like Node.js.
-
-In the following subsections, some popular web frameworks of Javascript will be introduced.
-
-### Learn Front-end {#learn-front-end}
+### Learn Front-End {#learn-front-end}
 
 Front-end of a website is defined as the user interface, as in what the user interacts with directly and how it looks from a stylistic point of view.
 
@@ -52,7 +55,7 @@ AngularJS is another front-end Javascript framework, used for the development of
 
 To use AngularJS, you have to import it the same way as you did with jQuery \(the details will be in the W3Schools guide\). Again, W3Schools has a great beginner’s guide for AngularJS, which can be found [here](https://www.w3schools.com/angular/angular_intro.asp).
 
-There is also a pretty good free course on [Code School](https://www.codeschool.com/courses/shaping-up-with-angularjs) on AngularJS. 
+There is also a pretty good free course on [Code School](https://www.codeschool.com/courses/shaping-up-with-angularjs) on AngularJS.
 
 The official documentation for AngularJS is [here](https://docs.angularjs.org/api)
 
@@ -64,7 +67,7 @@ If you want to start learning React.js, the official website has a great tutoria
 
 Official [documentation](https://reactjs.org/docs/react-api.html)
 
-### Learn Rear-end {#learn-rear-end}
+### Learn Rear-End {#learn-rear-end}
 
 Rear-end on the other hand is what the user can not see but it is essential to the functioning of a website. Such as the databases and complex logic and algorithms running in the background.
 
@@ -86,7 +89,5 @@ Similarly to Node.js, running PHP code on your computer will require downloading
 
 Official documentation for PHP 7 [here](http://php.net/manual/en/)
 
-#### Learning PHP? {#learning-php}
 
-PHP is a useful language if you wish to create advanced websites. Although other frameworks like Node.js are becoming popular for backend \(server-side of website programming\), PHP still has a great support since it has been used for over a decade. In addition to CodeAcademy, you can learn PHP from the official documentation [here](http://php.net/manual/en/getting-started.php).
 

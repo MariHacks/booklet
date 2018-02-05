@@ -1,4 +1,4 @@
-## Get Started with Databases {#get-started-with-databases}
+## Databases {#get-started-with-databases}
 
 Most beginner projects will not require the use of a database as all pertinent information can be stored locally. However if you are looking to gather large amount of information and process it, a database will be integral. In fact a database is simply defined as a structured set of data that is stored on a computer and accessible in several different ways \(i.e. read, write….\).
 

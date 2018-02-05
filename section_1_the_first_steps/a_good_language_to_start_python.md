@@ -1,4 +1,4 @@
-## A good language to start: Python {#a-good-language-to-start-python}
+## A Good Language to Start: Python {#a-good-language-to-start-python}
 
 The Python 3 programming language is currently one of the most popular language in the scientific world; it is used in chemistry, physics, biostatistics, etc. It is also used by many programmers working with machine learning and web development. If you are looking to make a miscellaneous program on your computer Python is for you.
 
