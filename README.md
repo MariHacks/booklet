@@ -6,11 +6,11 @@ This booklet contains short tutorials as well as numerous references to lead you
 
 **Outline:**
 
-* [The first steps](/section_1_the_first_steps/README.md)
+* [The First Steps](/section_1_the_first_steps/README.md)
 
-* [Dive into your projects](/section_2_dive_into_your_projects/README.md)
+* [Dive Into Your Projects](/section_2_dive_into_your_projects/README.md)
 
-* [Implement cooler stuff!](/section_3_implement_cooler_stuff/README.md)
+* [Implement Cooler Stuff!](/section_3_implement_cooler_stuff/README.md)
 
 
 
