@@ -1,0 +1,32 @@
+# Wolfram One
+
+## What is Wolfram One?
+
+Wolfram\|One is the world's first fully integrated cloud-desktop hybrid, integrated computation platform. The core of our technology stack is the Wolfram Language, which builds on three decades of development, and represents a new direction in programming-- that happens to be absolutely ideal for hackathons. 
+
+The Wolfram Language is optimized to make it easy to write small amounts of code that do spectacular things. As a language, it has an immense amount of knowledge about the world built into it, allowing for maximum automation.
+
+If you've used Mathematica in school, you already know a lot about the Wolfram Language. But regardless, it's very easy to learn. If you want to get a sense of how quick it is to do interesting things, check out [Tweet-a-Program](https://www.wolfram.com/language/tweet-a-program).
+
+## How to Use It?
+
+Wolfram Research is pleased to sponsor MariHacks2018 by providing access to our latest technology, Wolfram\|One! For complimentary access to our development platform and the Wolfram API, click [here](https://account.wolfram.com/redeem/MariHacksHSW1Montreal2018).
+
+This URL will take you to a sign-in page and prompt you to log in using your Wolfram ID. If you don't already have a Wolfram ID, you'll be prompted to create one using an active email address. Once logged in, you will see in the Downloads section which platforms of the software you have access to, with their accompanying activation keys. Please download the desktop version to your machine, boot up the application and use the associated activation key when prompted. This will grant you full access for 30 days from your activation date. 
+
+When you access Wolfram\|One in the cloud for the first time, you can create a new notebook or load a pre-made Things to Try live notebook, which is designed to guide you through neat things you can immediately compute in the Wolfram Language. 
+
+You can use Wolfram\|One to create instant web apps and APIs, or to deploy to mobile. The Wolfram Language is also bundled on the Raspberry Pi, where you can connect directly to hardware, including Arduino etc. 
+
+The fastest way to get an API up and running is detailed in the extensive Documentation Center available to you alongside your notebook: simply click the section in the documentation labeled Cloud and Deployment and select Instant APIs to access a handy how-to guide to help get you started. 
+
+To view your account details-- including your available Cloud Credits and Cloud storage-- or re-download Wolfram\|One, visit this [page](https://account.wolfram.com/products).
+
+We've put together [a general page of resources for hackathon participants](https://www.wolfram.com/hackathons).
+
+And there's an [online book with exercises](https://www.wolfram.com/language/elementary-introduction).
+
+### Wolfram Internship?
+
+Interested in Wolfram mentorships or internships? Check out our [opportunities](https://www.wolfram.com/company/careers). 
+
