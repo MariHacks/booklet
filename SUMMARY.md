@@ -13,5 +13,5 @@
   * [Other Programming Languages](section_2_dive_into_your_projects/learning_a_new_programming_language.md)
 * [Implement Cooler Stuff!](section_3_implement_cooler_stuff/README.md)
   * [Machine Learning](section_3_implement_cooler_stuff/implement_projects_with_machine_learning.md)
-  * [Wolfram One](section_3_implement_cooler_stuff/wolfram-one.md)
+  * [Wolfram\|One](section_3_implement_cooler_stuff/wolfram-one.md)
 
