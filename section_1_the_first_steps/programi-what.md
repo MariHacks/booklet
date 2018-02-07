@@ -1,6 +1,6 @@
-## Programi-What? {#programi-what}
+# Programi-What? {#programi-what}
 
-### Programming {#programming}
+## Programming {#programming}
 
 > **Programming: **provide \(a computer or other machine\) with coded instructions for the automatic performance of a particular task.
 
@@ -8,7 +8,7 @@ Seems simple enough yet programming is incredibly important and most importantly
 
 To code, you will use a coding language – not english, but something that the computer will understand. In this language, you will tell the computer exactly what you want it to do, and unlike a dog, the computer will always listen. Want to make a program that plays “Never Gonna Give You Up” by Rick Astley at random times throughout the day? Terrible taste but you can definitely do it!
 
-### Algorithms
+## Algorithms
 
 Moving on from memed songs, let’s learn about algorithms.
 

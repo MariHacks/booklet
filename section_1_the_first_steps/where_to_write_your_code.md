@@ -1,10 +1,10 @@
-## Where to Write Your Code {#where-to-write-your-code}
+# Where to Write Your Code {#where-to-write-your-code}
 
 Sadly, code can not be written in a Microsoft Word document. Well… I guess it can, but if you do, the full force of Reddit will come personally to your house and put you out of your misery.
 
 You could write your code in a text editor or in an integrated developer environment \(IDE\). While a text editor offers some useful tools like syntax highlighting and automatic indentation, an IDE typically has a lot more features \(including really good tools to help you find errors in your code\). Some languages actually force you to stick to their integrated developer environment \(like MATLAB or Swift\).
 
-### Text Editors {#text-editors}
+## Text Editors {#text-editors}
 
 When you just get started, you want to go straight to the code, without spending hours configuring your environment. A text editor that is easy to use, but that can be customized with excellent tools is perfect in these cases.
 
@@ -18,7 +18,7 @@ Links to download the beginner-friendly editors:
 * [Notepad++](https://notepad-plus-plus.org/download/v7.5.3.html)
 * [Sublime](https://www.sublimetext.com/)
 
-### Integrated Developer Environments {#integrated-developer-environments}
+## Integrated Developer Environments {#integrated-developer-environments}
 
 Once you have a reached a certain level in developing programs and software, you might want to upgrade to an integrated developer environment \(IDE\). IDEs typically have features that will help you develop back-end servers, Android apps, and use SQL queries and data visualisation more easily.
 
