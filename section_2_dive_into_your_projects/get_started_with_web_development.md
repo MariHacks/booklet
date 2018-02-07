@@ -90,7 +90,7 @@ PHP is the most popular server-side scripting language for web development. PHP 
 
 Similarly to Node.js, running PHP code on your computer will require downloading and installing the interpreter [here](http://php.net/downloads.php). To run a PHP script, you have to use the command prompt and navigate to the path of the folder that contains the script you created. Then, you can use the _**php -S localhost:8000**_ command to initiate the script. This will create a local testing server, with the address “localhost:8000”, that will run your script. For a beginner’s guide on PHP syntax and how to use it in HTML, check out [Codecademy](https://www.codecademy.com/en/tracks/php)
 
-Official documentation for PHP 7 [here](http://php.net/manual/en/)
+Official documentation for PHP 7 [here](http://php.net/manual/en/).
 
 ## Free Domain Names
 
