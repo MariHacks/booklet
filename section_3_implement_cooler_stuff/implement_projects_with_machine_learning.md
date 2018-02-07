@@ -1,10 +1,10 @@
-## Implement Projects with Machine Learning {#implement-projects-with-machine-learning}
+## Machine Learning {#implement-projects-with-machine-learning}
 
 ### Google Cloud APIs {#google-cloud-apis}
 
 If you want a taste of what Machine Learning does before diving right into it, the Google Cloud Platform is a good place to start. The Cloud platform is a web Application Program Interface \( web API\), which you can think of as a service that let you “ask” something to the Google servers, and they “reply” to you in a certain way. In our case, the action of asking is called a get request, and their reply will be given as a .json file \(which resembles a JavaScript object, or Python Dictionary\). To read more about web requests, read it [here](https://www.tutorialspoint.com/http/http_requests.htm).
 
-To get started with Google Cloud Platform, you have to first create an account. You will get $300 in credits when you start if you enter your billing information. However, you will still have access to some of the features without it. The [how-to](https://cloud.google.com/billing/docs/how-to/manage-billing-account) explain the process well. 
+To get started with Google Cloud Platform, you have to first create an account. You will get $300 in credits when you start if you enter your billing information. However, you will still have access to some of the features without it. The [how-to](https://cloud.google.com/billing/docs/how-to/manage-billing-account) explain the process well.
 
 Once you have setup your account, you can start playing with the APIs! Here are the four Machine Learning APIs Google is currently offering:
 
@@ -37,7 +37,7 @@ Scikit Learn is a machine learning library that include most of the popular mode
 
 Official [Numpy](http://www.numpy.org/) Website.
 
-Official [Scikit](http://scikit-learn.org) Learn Website. 
+Official [Scikit](http://scikit-learn.org) Learn Website.
 
 ### Beginner Implementations: Keras {#beginner-implementations-keras}
 
@@ -47,7 +47,7 @@ If you want to implement Neural Networks right away, Keras is exactly what you n
 
 Tensorflow is probably the most useful library if you want to create advanced projects with deep learning and neural networks. However, getting started with Tensorflow is definitely not easy, and requires you to have a strong background in programming and machine learning. However, for the purpose of the hack, it is definitely possible to find great open-sourced programs posted on GitHub \(Google is your best friend here\), and implement those pre-trained models.
 
-You can download [Tensorflow](https://www.tensorflow.org/install/) on the official website. 
+You can download [Tensorflow](https://www.tensorflow.org/install/) on the official website.
 
 If you want to learn more about how to use Tensorflow, you can take the Udacity course created by the Google developers [here](https://www.udacity.com/course/deep-learning--ud730).
 

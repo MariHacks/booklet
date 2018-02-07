@@ -4,3 +4,12 @@ Taking your first steps into the coding world can be stressful and even dangerou
 
 To ensure your safety and enjoyment we have created a quick and essential getting started guide. Whether you are a veteran coder or just getting started we recommend that you take a look at our first steps guide.
 
+**Outline:**
+
+* [Programi-What?](/section_1_the_first_steps/programi-what.md)
+* [Where to Write Your Code](/where to)
+* [Python: A Good Language to Start](/python)
+* [GitHub: Collaborating and Sharing Code](/github)
+
+
+
