@@ -8,6 +8,7 @@
   * [Python: A Good Language to Start With](section_1_the_first_steps/a_good_language_to_start_python.md)
 * [Dive Into Your Projects](section_2_dive_into_your_projects/README.md)
   * [Web Development](section_2_dive_into_your_projects/get_started_with_web_development.md)
+  * [App Development](section_2_dive_into_your_projects/app-development.md)
   * [Game Development](section_2_dive_into_your_projects/get_started_with_game_development.md)
   * [Databases](section_2_dive_into_your_projects/get_started_with_databases.md)
   * [Other Programming Languages](section_2_dive_into_your_projects/learning_a_new_programming_language.md)

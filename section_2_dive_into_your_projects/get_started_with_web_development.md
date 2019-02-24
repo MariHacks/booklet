@@ -16,9 +16,6 @@ A great resource that can help you get started with web development is [Free Cod
 * [Learn Back-End](get_started_with_web_development.md#learn-rear-end)
   * [Node.js](get_started_with_web_development.md#node-js)
   * [PHP](get_started_with_web_development.md#php)
-* [Free Domain Names!](get_started_with_web_development.md#free-domain-names)
-  * [Domain.com](get_started_with_web_development.md#domaincom)
-  * [.Tech](get_started_with_web_development.md#tech)
 
 ## HTML \(HyperText Markup Language\)
 
