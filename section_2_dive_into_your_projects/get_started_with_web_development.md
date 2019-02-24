@@ -1,6 +1,6 @@
 # Web Development
 
-Building a website or a web application is no simple task. It’s a process with a whole lot of steps. However, fret not, there are plenty of tools to help you in this process. The task of a web developer can be mainly divided into 2 parts: front-end and rear-end. Front-end refers to the part of the website that the visitor can see and interact with \(the client\), while rear-end refers to the server-side mechanisms that interact with the databases and other cloud services \(the server\).
+Building a website or a web application is no simple task. It’s a process with a whole lot of steps. However, fret not, there are plenty of tools to help you in this process. The task of a web developer can be mainly divided into 2 parts: front-end and back-end. Front-end refers to the part of the website that the visitor can see and interact with \(the client\), while back-end refers to the server-side mechanisms that interact with the databases and other cloud services \(the server\).
 
 A great resource that can help you get started with web development is [Free Code Camp](https://www.freecodecamp.org). To have a solid foundation in web development, doing the HTML5 and CSS \(5 hours\) as well as the Basic Javascript \(10 hours\) courses would be a great start. Once you finished those, you can look into other courses such as Bootstrap and jQuery to sharpen your skills. There are also some courses on Node.js and React.js available.
 
@@ -13,7 +13,7 @@ A great resource that can help you get started with web development is [Free Cod
 * * [jQuery](get_started_with_web_development.md#jquery)
   * [AngularJS](get_started_with_web_development.md#angularjs)
   * [React.js](get_started_with_web_development.md#react-js)
-* [Learn Rear-End](get_started_with_web_development.md#learn-rear-end)
+* [Learn Back-End](get_started_with_web_development.md#learn-rear-end)
   * [Node.js](get_started_with_web_development.md#node-js)
   * [PHP](get_started_with_web_development.md#php)
 * [Free Domain Names!](get_started_with_web_development.md#free-domain-names)
@@ -36,7 +36,7 @@ Exhaustive list of CSS properties found [here](https://developer.mozilla.org/en-
 
 ## JavaScript
 
-JavaScript is extremely popular and versatile programming language. Traditionally, JavaScript is used along with HTML and CSS for front-end development. However, there are many frameworks for JavaScript out there which simplify and extend its implementation. With the right framework, Javascript can be used almost everywhere, front-end and rear-end. That’s why it’s a good idea to get familiar with this language before the hackathon.
+JavaScript is extremely popular and versatile programming language. Traditionally, JavaScript is used along with HTML and CSS for front-end development. However, there are many frameworks for JavaScript out there which simplify and extend its implementation. With the right framework, Javascript can be used almost everywhere, front-end and back-end. That’s why it’s a good idea to get familiar with this language before the hackathon.
 
 There are plenty of resources to learn vanilla JavaScript on the web that are available with a simple Google search. [Here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) is a good place to start with. You can also try [W3Schools](https://www.w3schools.com/js/).
 
@@ -54,7 +54,7 @@ To use the the jQuery library, you simply add a line importing the library at th
 
 ### AngularJS
 
-AngularJS is another front-end Javascript framework, used for the development of web applications. By default, HTML creates static pages. AngularJS allows us to make the content of a web page dynamic and reshaped by the inputs of the users without passing through the rear-end, by allowing us to use variables in HTML code.
+AngularJS is another front-end Javascript framework, used for the development of web applications. By default, HTML creates static pages. AngularJS allows us to make the content of a web page dynamic and reshaped by the inputs of the users without passing through the back-end, by allowing us to use variables in HTML code.
 
 To use AngularJS, you have to import it the same way as you did with jQuery \(the details will be in the W3Schools guide\). Again, W3Schools has a great beginner’s guide for AngularJS, which can be found [here](https://www.w3schools.com/angular/angular_intro.asp).
 
@@ -70,9 +70,9 @@ If you want to start learning React.js, the official website has a great tutoria
 
 Official [documentation](https://reactjs.org/docs/react-api.html)
 
-## Learn Rear-End
+## Learn Back-End
 
-Rear-end on the other hand is what the user can not see but it is essential to the functioning of a website. Such as the databases and complex logic and algorithms running in the background.
+Back-end on the other hand is what the user can not see but it is essential to the functioning of a website. Such as the databases and complex logic and algorithms running in the background.
 
 ### Node.js
 
