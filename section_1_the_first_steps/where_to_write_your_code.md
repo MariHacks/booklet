@@ -8,15 +8,9 @@ You could write your code in a text editor or in an integrated developer environ
 
 When you just get started, you want to go straight to the code, without spending hours configuring your environment. A text editor that is easy to use, but that can be customized with excellent tools is perfect in these cases.
 
-Notepad++ is great for quickly write your code down. It doesn’t take more than 5 minutes to install, it can be used with many different languages, and contains all you need to comfortably write your programs. However, unlike more advanced editors, you can’t run your code directly from Notepad++, so you will need to run it from the command line. However, there are ways to do so \(Stackoverflow example: [here](https://stackoverflow.com/questions/1702586/how-to-execute-a-python-file-in-notepad)\), but it’s very clunky.
+A good editor to start with is [Atom](https://atom.io/). After installing it, you can start coding right away. As you develop, you might find yourself in need of some extra features to improve your productivity. For such cases, atom can be extended with various plugins.  If you want to customise atom further, see [this video](https://www.youtube.com/watch?v=U5POoGSrtGg).
 
-Atom and Sublime are the solution to this problem. After you install them, you can start coding straight away. However, as you develop, you might find yourself in need of some plugins to improve your productivity. They are easy to understand and install, and are completely free. There are many differences between Atom and Sublime, but starting with either is fine. Atom has a “Get Started” section on their website, whereas guides and tutorial for Sublime can be easily found [here](https://www.codecademy.com/articles/text-editor). [Here's](https://medium.com/@faridlab/comparing-atom-sublime-text-f12470658fc7) a detailed side-by-side comparison of the two editors.
-
-Links to download the beginner-friendly editors:
-
-* [Atom](http://flight-manual.atom.io/getting-started/sections/installing-atom/)
-* [Notepad++](https://notepad-plus-plus.org/download/v7.5.3.html)
-* [Sublime](https://www.sublimetext.com/)
+Another simple editor is [Sublime](https://www.sublimetext.com/). Although there are various differences between Sublime and Atom, but starting with either is fine. [Here](https://www.codecademy.com/articles/text-editor) is a quick guide for running Sublime. For a detailed side-by-side comparison of the two editors, see [here](https://www.codecademy.com/articles/text-editor).
 
 ## Integrated Developer Environments <a id="integrated-developer-environments"></a>
 
