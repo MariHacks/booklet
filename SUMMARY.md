@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [MariHacks Hacker Booklet](README.md)
 * [The First Steps](section_1_the_first_steps/README.md)

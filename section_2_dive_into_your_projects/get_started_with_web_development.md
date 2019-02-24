@@ -6,19 +6,19 @@ A great resource that can help you get started with web development is [Free Cod
 
 **Outline:**
 
-* [HTML \(HyperText Markup Language\)](#html-hypertext-markup-language)
-* [CSS \(Cascading Style Sheets\)](#css-cascading-style-sheets)
-* [JavaScript](#javascript)
-* [Learn Front-End](#learn-front-end)
-* * [jQuery](#jquery)
-  * [AngularJS](#angularjs)
-  * [React.js](#react-js)
-* [Learn Rear-End](#learn-rear-end)
-  * [Node.js](#node-js)
-  * [PHP](#php)
-* [Free Domain Names!](#free-domain-names)
-  * [Domain.com](#domaincom)
-  * [.Tech](#tech)
+* [HTML \(HyperText Markup Language\)](get_started_with_web_development.md#html-hypertext-markup-language)
+* [CSS \(Cascading Style Sheets\)](get_started_with_web_development.md#css-cascading-style-sheets)
+* [JavaScript](get_started_with_web_development.md#javascript)
+* [Learn Front-End](get_started_with_web_development.md#learn-front-end)
+* * [jQuery](get_started_with_web_development.md#jquery)
+  * [AngularJS](get_started_with_web_development.md#angularjs)
+  * [React.js](get_started_with_web_development.md#react-js)
+* [Learn Rear-End](get_started_with_web_development.md#learn-rear-end)
+  * [Node.js](get_started_with_web_development.md#node-js)
+  * [PHP](get_started_with_web_development.md#php)
+* [Free Domain Names!](get_started_with_web_development.md#free-domain-names)
+  * [Domain.com](get_started_with_web_development.md#domaincom)
+  * [.Tech](get_started_with_web_development.md#tech)
 
 ## HTML \(HyperText Markup Language\)
 
@@ -91,25 +91,4 @@ PHP is the most popular server-side scripting language for web development. PHP 
 Similarly to Node.js, running PHP code on your computer will require downloading and installing the interpreter [here](http://php.net/downloads.php). To run a PHP script, you have to use the command prompt and navigate to the path of the folder that contains the script you created. Then, you can use the _**php -S localhost:8000**_ command to initiate the script. This will create a local testing server, with the address “localhost:8000”, that will run your script. For a beginner’s guide on PHP syntax and how to use it in HTML, check out [Codecademy](https://www.codecademy.com/en/tracks/php)
 
 Official documentation for PHP 7 [here](http://php.net/manual/en/).
-
-## Free Domain Names
-
-Two of our sponsors, Domain.com and dotTech will be providing free domain names.
-
-### Domain.com
-
-To obtain a domain from Domain.com \(.com/.co extension\), follow the instructions on the MLH pamphlet \(will be distributed at the event\).
-
-### .Tech
-
-To obtain a domain from .Tech \(.tech extension\), use the instructions below.
-
-.Tech will be sponsoring a $250 prize for the best website with their domain name!
-
-#### Instructions
-
-1. Log onto - www.get.tech/startups - and fill your details.
-2. Select MariHacks and enter the secret code - marihacks.tech - to submit your request. Once approved, you will receive a coupon code which you can use at checkout on www.get.tech to get your FREE .tech domain name.
-
-
 

@@ -1,4 +1,4 @@
-# The First Steps {#section-1-the-first-steps}
+# The First Steps
 
 Taking your first steps into the coding world can be stressful and even dangerous if you get stuck in an nested loop.
 
@@ -6,10 +6,8 @@ To ensure your safety and enjoyment we have created a quick and essential gettin
 
 **Outline:**
 
-* [Programi-What?](/section_1_the_first_steps/programi-what.md)
-* [Where to Write Your Code](/where to)
-* [Python: A Good Language to Start](/python)
-* [GitHub: Collaborating and Sharing Code](/github)
-
-
+* [Programi-What?](programi-what.md)
+* [Where to Write Your Code](https://github.com/MariHacks/booklet/tree/15a7f7ae74bb869d054e9430dafa5e58eded8e2b/where%20to/README.md)
+* [Python: A Good Language to Start](https://github.com/MariHacks/booklet/tree/15a7f7ae74bb869d054e9430dafa5e58eded8e2b/python/README.md)
+* [GitHub: Collaborating and Sharing Code](https://github.com/MariHacks/booklet/tree/15a7f7ae74bb869d054e9430dafa5e58eded8e2b/github/README.md)
 

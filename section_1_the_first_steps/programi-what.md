@@ -1,8 +1,8 @@
-# Programi-What? {#programi-what}
+# Programi-What?
 
-## Programming {#programming}
+## Programming <a id="programming"></a>
 
-> **Programming: **provide \(a computer or other machine\) with coded instructions for the automatic performance of a particular task.
+> **Programming:** provide \(a computer or other machine\) with coded instructions for the automatic performance of a particular task.
 
 Seems simple enough yet programming is incredibly important and most importantly ~~nerds~~ everyone agree that it is cool. Coding can be separated into a couple categories and languages – our booklet covers the main ones.
 

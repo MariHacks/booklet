@@ -1,4 +1,4 @@
-# GitHub: Collaborating and Sharing Code {#collaborating-and-sharing-code-with-github}
+# GitHub: Collaborating and Sharing Code
 
 If you are working as a team then you really should use Github!
 

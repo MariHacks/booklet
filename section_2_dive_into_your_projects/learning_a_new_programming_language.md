@@ -1,10 +1,10 @@
-# Other Programming Languages {#learning-a-new-programming-language}
+# Other Programming Languages
 
 _Learning a new language is always challenging, whether you are experienced or not._
 
 Codeacademy offers straightforward code-as-you-go tutorials for many different languages, including Python, Java, JavaScript, HTML, etc. You can find their complete catalog [here](https://www.codecademy.com/catalog/subject/programming).
 
-## Java {#java}
+## Java <a id="java"></a>
 
 Java is a widely used language in software development. It is used to create web servers, business applications, and games \(like Minecraft\). It is especially popular because the same \(compiled\) code will run the same way on any platform, because it will be run inside a platform called the Java Virtual Machine \(JVM\), that the developers of the language have created specifically for each category of computer.
 
@@ -14,11 +14,11 @@ If you want to learn as much Java as possible before the event start, reading th
 
 If you are looking to practice, take a look at [w3resources](https://www.w3resource.com/java-exercises/basic/index.php)
 
-## Swift {#swift}
+## Swift <a id="swift"></a>
 
 Swift is the official language to create iOS apps, and it is supported by Apple. It is not particularly hard to learn, but not that easy to master. If you are looking to become an apple wizard \(not in the sleeping beauty way\), we recommend that you to get acquainted with developing apps in general before diving into the fruit bowl. Apple’s official [tutorial](https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/) is a good way to start.
 
-## C/C++ {#c-c}
+## C/C++ <a id="c-c"></a>
 
 C and C++ are probably some of the more challenging languages for beginners – it’s even difficult for those with a basis in Python or JavaScript. It is, however, very widely used to create video games, craft robots, write computer programs, and interact directly with your computer. It is also much faster than Python, JavaScript or Java.
 
@@ -26,6 +26,4 @@ In order to run C code, you need to compile your program before using it. This m
 
 * [Windows](https://docs.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line)
 * [Linux](http://www.network-theory.co.uk/docs/gccintro/gccintro_9.html)
-
-
 
