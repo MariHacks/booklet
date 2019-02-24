@@ -6,8 +6,8 @@ In this section we have outlined the basics of web and game development as well 
 
 **Outline:**
 
-* [Web Development](get_started_with_web_development.md)
-* [Game Development](get_started_with_game_development.md)
-* [Databases](get_started_with_databases.md)
-* [Other Programming Languages](learning_a_new_programming_language.md)
+* [Web Development](web.md)
+* [Game Development](game.md)
+* [Databases](databases.md)
+* [Other Programming Languages](other.md)
 

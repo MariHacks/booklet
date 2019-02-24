@@ -6,7 +6,7 @@ Because of its simplicity, Python is also a really good language for beginners. 
 
 ## Installation
 
-Python can be installed from [here](https://www.python.org/downloads/). You will also need an editor in which to write python code in. You can find more in the [previous section](where_to_write_your_code.md).
+Python can be installed from [here](https://www.python.org/downloads/). You will also need an editor in which to write python code in. You can find more in the [previous section](editors.md).
 
 ## Learning Python
 

@@ -4,7 +4,7 @@ There are many ways to approach developing an app. Normally, apps would have to 
 
 ## Flutter
 
-[Flutter](https://flutter.dev/) is a new framework for writing fast, beautiful apps for both iOS and Android. Set up flutter and start developing apps, follow their ["Get Started"](https://flutter.dev/docs/get-started/install) guide.
+[Flutter](https://flutter.dev/) is a new framework for writing fast, beautiful apps for both iOS and Android. To set up flutter and start developing apps with it, follow their "[Get Started](https://flutter.dev/docs/get-started/install)" guide.
 
 ## React Native
 

@@ -8,6 +8,6 @@ We also have a section on Wolfram\|One!
 
 **Outline:**
 
-* [Machine Learning](implement_projects_with_machine_learning.md)
-* [Wolfram\|One](wolfram-one.md)
+* [Machine Learning](machine_learning.md)
+* [Wolfram\|One](wolframone.md)
 

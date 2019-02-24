@@ -6,16 +6,16 @@ A great resource that can help you get started with web development is [Free Cod
 
 **Outline:**
 
-* [HTML \(HyperText Markup Language\)](get_started_with_web_development.md#html-hypertext-markup-language)
-* [CSS \(Cascading Style Sheets\)](get_started_with_web_development.md#css-cascading-style-sheets)
-* [JavaScript](get_started_with_web_development.md#javascript)
-* [Learn Front-End](get_started_with_web_development.md#learn-front-end)
-* * [jQuery](get_started_with_web_development.md#jquery)
-  * [AngularJS](get_started_with_web_development.md#angularjs)
-  * [React.js](get_started_with_web_development.md#react-js)
-* [Learn Back-End](get_started_with_web_development.md#learn-rear-end)
-  * [Node.js](get_started_with_web_development.md#node-js)
-  * [PHP](get_started_with_web_development.md#php)
+* [HTML \(HyperText Markup Language\)](web.md#html-hypertext-markup-language)
+* [CSS \(Cascading Style Sheets\)](web.md#css-cascading-style-sheets)
+* [JavaScript](web.md#javascript)
+* [Learn Front-End](web.md#learn-front-end)
+* * [jQuery](web.md#jquery)
+  * [AngularJS](web.md#angularjs)
+  * [React.js](web.md#react-js)
+* [Learn Back-End](web.md#learn-rear-end)
+  * [Node.js](web.md#node-js)
+  * [PHP](web.md#php)
 
 ## HTML \(HyperText Markup Language\)
 
