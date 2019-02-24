@@ -1,36 +1,22 @@
-# GitHub: Collaborating and Sharing Code
+# Version Control and Github: Collaborating and Sharing Code
 
-If you are working as a team then you really should use Github!
+When developing software, programmers need some place to store their code and the changes between each version. They also need to be able to share it with others in order to collaborate with teammates or have others use it. This is what so-called _version control systems_ do. They simplify organising code and managing changes. The most popular VCS is git. Though projects don't necessarily require git, it can make collaborating siginificantly easier. So, if you are working as part of a team, you should definitely use git.
 
-GitHub is one of the most important tool for sharing code to the general public, and collaborating with your friends on programming projects. Either you use it as a public dropbox, or as a tool for an advanced Software Development project, GitHub offers a range of functions that will make your life easier.
+Code is stored in a _repository_, often on online services. Think of it as Dropbox or Google Drive, but for code. The most popular service for storing and sharing code is GitHub. As the name suggests, GitHub uses git to push and pull changes from its servers. It also offers a range of facilities which will make your life easier. Thus, we suggest starting off with GitHub.
 
-To get started you and all your friends will need to make yourselves a GitHub account. Then one of you will need to create a new repository \(the GitHub term for project or constellation of files\).
+To learn more, see the [git handbook](https://guides.github.com/introduction/git-handbook/) by GitHub.
 
-This is done by clicking on the little plus button in the top right and then clicking on “New repository”.
+## Using GitHub
 
-Give it a name and a description and then click create! \(note that the readme file is recommended so people who stumble upon your work will know what you have achieved\)
+To start off, you and any of your friends will need to [create a GitHub account](https://github.com/join?source=header-home). Then, you can start learning the basics of GitHub's interface in their ["Hello World"](https://guides.github.com/activities/hello-world/) guide introducing GitHub's flow. After creating a repository, add any friends you want to work with on the repository by going to "Settings"-&gt;"Collaborators", and inviting their usernames.
 
-The next step is to allow your friends to contribute to your repository:
+Next, you will need a git client in order to manage your repository from your system. If your are comfortable working in a terminal, then you can simply use the command line. However, if you are a beginner, then we suggest starting off with a simpler client, such as [GitHub for desktop](https://desktop.github.com/), or, for something slightly more complicated, [GitKraken](https://www.gitkraken.com/git-client).
 
-This is done by then clicking on the “Settings” tab in the bar just above the repository name. Then clicking on “Collaborators” in the menu on the left hand side and finally inviting your friends by writing their GitHub name in the search bar and clicking invite.
-
-Now you need to install [GitHub for desktop](https://desktop.github.com/)
-
-You can enter your credentials and login.
-
-On the repository page on your browser you can click on on the big green “clone or download” button and click on “open in desktop”
-
-Now the repository should appear in GitHub for desktop and you will be able to click the “fetch” and then “pull” button to get up to date. Next you can click on the little blue text in the center to open the repository in explorer.
+If you use GitHub for desktop, then on the GitHub repository page on your browser for your project, you can click on on the big green “clone or download” button and click on “open in desktop”. Now the repository should appear in GitHub for desktop and you will be able to click the “fetch” and then “pull” button to get up to date. Next you can click on the little blue text in the center to open the repository in explorer.
 
 Now all changes made in this folder will be tracked and saved on GitHub even if multiple people are working at the same time. In fact to save your changes you have to “commit” them by adding a name to the changes and then clicking “fetch” or “push” or “pull” \(its all the same button!\)
 
-For more information follow the links the provided links:
+## Advanced Version Control
 
-GitHub [tutorial](https://guides.github.com/activities/hello-world/)
-
-Free GitHub for [students](https://education.github.com/pack)
-
-Learning Git, the language behind GitHub, is good if you want to accelerate your development. It also help you understand better how GitHub works.
-
-Read "[Pro Git](https://git-scm.com/book/en/v2)"
+Three is much, much more to git than is covered here. If you have experience using git and want to learn how to perform more complex operations, read "[Pro Git](https://git-scm.com/book/en/v2)".
 
