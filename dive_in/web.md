@@ -4,19 +4,6 @@ Building a website or a web application is no simple task. It’s a process with
 
 A great resource that can help you get started with web development is [Free Code Camp](https://www.freecodecamp.org). To have a solid foundation in web development, doing the HTML5 and CSS \(5 hours\) as well as the Basic Javascript \(10 hours\) courses would be a great start. Once you finished those, you can look into other courses such as Bootstrap and jQuery to sharpen your skills. There are also some courses on Node.js and React.js available.
 
-**Outline:**
-
-* [HTML \(HyperText Markup Language\)](web.md#html-hypertext-markup-language)
-* [CSS \(Cascading Style Sheets\)](web.md#css-cascading-style-sheets)
-* [JavaScript](web.md#javascript)
-* [Learn Front-End](web.md#learn-front-end)
-* * [jQuery](web.md#jquery)
-  * [AngularJS](web.md#angularjs)
-  * [React.js](web.md#react-js)
-* [Learn Back-End](web.md#learn-rear-end)
-  * [Node.js](web.md#node-js)
-  * [PHP](web.md#php)
-
 ## HTML \(HyperText Markup Language\)
 
 HTML is the most fundamental language in web development. When you visit a website, your browser downloads the .html file from the server and displays the content from the HTML code. Basically, the point of a browser is to read HTML code \(as well as CSS and Javascript\).
