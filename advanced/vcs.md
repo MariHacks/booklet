@@ -18,5 +18,5 @@ Now all changes made in this folder will be tracked and saved on GitHub even if 
 
 ## Advanced Version Control
 
-Three is much, much more to git than is covered here. If you have experience using git and want to learn how to perform more complex operations, read "[Pro Git](https://git-scm.com/book/en/v2)".
+Three is much, much more to git than is covered here. If you have experience using git and want to learn how to perform more complex operations, see "[Pro Git](https://git-scm.com/book/en/v2)".
 

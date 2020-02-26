@@ -1,6 +1,6 @@
 # Python: A Good Language to Start With
 
-The Python 3 programming language is currently one of the most popular language in the scientific world; it is used in many fields such as chemistry, physics, biostatistics, data science, and many others. It is also used by programmers working with machine learning and web development. Python can be used for quickly solving most problems.
+The Python programming language is currently one of the most popular languages in the scientific world; it is used in many fields such as chemistry, physics, biostatistics, data science, and many others. It is also used by programmers working with machine learning and web development. Python can be used for quickly solving most problems.
 
 Because of its simplicity, Python is also a really good language for beginners. Many schools have started adopting it as a language of choice for introductory courses, including MIT.
 
@@ -15,4 +15,3 @@ If you want to learn as much Python as possible before the event start, reading 
 On the day of the event, there are many resources available to quickly get started with Python. For beginners, going through the Codeacademy tutorial is a good start. If you already know a language or two, you can start by trying to automate repetitive tasks with [Automate the Boring Stuff](https://automatetheboringstuff.com/). The Official Python [Documentation](https://docs.python.org/3/) also contains a detailed description of all the functions available in the language.
 
 For a complete list of resources available for both beginners and experienced programmers, check out this [link](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers).
-
