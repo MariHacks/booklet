@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title></title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> MariHacks Hacker Booklet</a></li><li class="expanded "><a href="first_steps/index.html"><strong aria-hidden="true">2.</strong> The First Steps</a></li><li><ol class="section"><li class="expanded "><a href="first_steps/programming.html"><strong aria-hidden="true">2.1.</strong> Programi-What?</a></li><li class="expanded "><a href="first_steps/editors.html"><strong aria-hidden="true">2.2.</strong> Where to Write Your Code</a></li><li class="expanded "><a href="first_steps/python.html"><strong aria-hidden="true">2.3.</strong> Python: A Good Language to Start With</a></li></ol></li><li class="expanded "><a href="dive_in/index.html"><strong aria-hidden="true">3.</strong> Dive Into Your Projects</a></li><li><ol class="section"><li class="expanded "><a href="dive_in/web.html"><strong aria-hidden="true">3.1.</strong> Web Development</a></li><li class="expanded "><a href="dive_in/app.html"><strong aria-hidden="true">3.2.</strong> App Development</a></li><li class="expanded "><a href="dive_in/game.html"><strong aria-hidden="true">3.3.</strong> Game Development</a></li><li class="expanded "><a href="dive_in/databases.html"><strong aria-hidden="true">3.4.</strong> Databases</a></li><li class="expanded "><a href="dive_in/other.html"><strong aria-hidden="true">3.5.</strong> Other Programming Languages</a></li></ol></li><li class="expanded "><a href="advanced/index.html"><strong aria-hidden="true">4.</strong> More Advanced Stuff!</a></li><li><ol class="section"><li class="expanded "><a href="advanced/vcs.html"><strong aria-hidden="true">4.1.</strong> Version Control and Github: Collaborating and Sharing Code</a></li><li class="expanded "><a href="advanced/machine_learning.html"><strong aria-hidden="true">4.2.</strong> Machine Learning</a></li><li class="expanded "><a href="advanced/wolframone.html"><strong aria-hidden="true">4.3.</strong> Wolfram|One</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title"></h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#marihacks-hacker-booklet" id="marihacks-hacker-booklet">MariHacks Hacker Booklet</a></h1>
+<p><strong>Welcome to the Hacker Booklet!</strong> This booklet will help you prepare for MariHacks. Although the booklet is mainly oriented towards beginners, experienced hackers might also want to take a look.</p>
+<p>This booklet contains short tutorials as well as numerous references to lead you in the right direction. Want to make a website but do not know where to start? Just jump to the <a href="dive_in/web.html">web development section</a>. Not sure if <a href="advanced/machine_learning.html">machine learning</a> is the way to go? Read up on it in our booklet. Need help with APIs? We got you covered!</p>
+<p><img src="assets/programming-meme.jpg" alt="" /></p>
+<h1><a class="header" href="#the-first-steps" id="the-first-steps">The First Steps</a></h1>
+<p>Taking your first steps into the coding world can be stressful and even dangerous if you get stuck in an nested loop.</p>
+<p>To ensure your safety and enjoyment we have created a quick and essential getting started guide. Whether you are a veteran coder or just getting started we recommend that you take a look at our first steps guide.</p>
+<h1><a class="header" href="#programi-what" id="programi-what">Programi-What?</a></h1>
+<h2><a class="header" href="#programming-a-idprogramminga" id="programming-a-idprogramminga">Programming <a id="programming"></a></a></h2>
+<blockquote>
+<p><strong>Programming:</strong> provide (a computer or other machine) with coded instructions for the automatic performance of a particular task.</p>
+</blockquote>
+<p>Seems simple enough yet programming is incredibly important and most importantly <del>nerds</del> everyone agree that it is cool. Coding can be separated into a couple categories and languages – our booklet covers the main ones.</p>
+<p>To code, you will use a coding language – not english, but something that the computer will understand. In this language, you will tell the computer exactly what you want it to do, and unlike a dog, the computer will always listen. Want to make a program that plays “Never Gonna Give You Up” by Rick Astley at random times throughout the day? Terrible taste but you can definitely do it!</p>
+<h2><a class="header" href="#algorithms" id="algorithms">Algorithms</a></h2>
+<p>Moving on from memed songs, let’s learn about algorithms. An algorithm is a function that is effective for a specific goal. You can think of an algorithm as a function that takes some input, and processes that input to produce some sort of output.</p>
+<p>Let’s say you wanted to guess my favourite number. I don’t know of any function in programming called <code>FavNum()</code> so we’ll have to write our own algorithm to solve it. For simplicity sake, let’s assume my number is between 0 and 100. And since I am a busy person, we want to minimize the number of questions that I have to answer.</p>
+<p>One way to get my number, is to simply go through all the numbers from 0 to 100 and ask me if that’s my number. Unfortunately, I don’t have all day, and let’s just say I would not be very happy if you had to ask me all those questions.</p>
+<p>What you might want to do instead is ask me if my number is bigger than or smaller than 50 (i.e. the halfway point). If I answer that it is bigger, then we’re down to numbers 51-100, and if I answer that it is smaller, then we’re down to 0-49. Either way, we cut the eligible amount of numbers in half! Now, we simply have to ask me once again if my number is bigger or smaller than the midpoint of the range and after a couple iterations, we will find out my favourite number! Or you could have simply asked me for my favourite number… it’s 73! This is an example of how a function can use a more <em>efficient</em> algorithm.</p>
+<p>The algorithm of repeatedly cutting a list of numbers in half to find a value is called binary search. There are many other cool ones that you can learn about <a href="https://www.khanacademy.org/computing/computer-science/algorithms">here</a>. Algorithms are useful for solving a wide range of problems. A good grasp of algorithms can come in handy if you run into an interesting problem, but is not necessary if you're just starting off.</p>
+<h1><a class="header" href="#where-to-write-your-code" id="where-to-write-your-code">Where to Write Your Code</a></h1>
+<p>Sadly, code can't be written in a Microsoft Word document. Well… I guess it can, but if you do, the full force of Reddit will come personally to your house and put you out of your misery.</p>
+<p>You could write your code in a text editor or in an integrated development environment (IDE). While a text editor offers some useful tools like syntax highlighting and automatic indentation, an IDE typically has a lot more features (including really good tools to help you find errors in your code).</p>
+<h2><a class="header" href="#integrated-development-environments-a-idintegrated-developer-environmentsa" id="integrated-development-environments-a-idintegrated-developer-environmentsa">Integrated Development Environments <a id="integrated-developer-environments"></a></a></h2>
+<p>IDEs are editors with many extra utilities to help in programming.
+There are many to choose from, but a great IDE to start with is
+<a href="https://code.visualstudio.com/">Visual Studio Code</a>, or VSCode for
+short. Through plugins, VSCode has great support for a multitude
+of languages.</p>
+<h1><a class="header" href="#python-a-good-language-to-start-with" id="python-a-good-language-to-start-with">Python: A Good Language to Start With</a></h1>
+<p>The Python programming language is currently one of the most popular languages in the scientific world; it is used in many fields such as chemistry, physics, biostatistics, data science, and many others. It is also used by programmers working with machine learning and web development. Python can be used for quickly solving most problems.</p>
+<p>Because of its simplicity, Python is also a really good language for beginners. Many schools have started adopting it as a language of choice for introductory courses, including MIT.</p>
+<h2><a class="header" href="#installation" id="installation">Installation</a></h2>
+<p>Python can be installed from <a href="https://www.python.org/downloads/">here</a>. You will also need an editor in which to write python code in. You can find more in the <a href="first_steps/editors.html">previous section</a>.</p>
+<h2><a class="header" href="#learning-python" id="learning-python">Learning Python</a></h2>
+<p>If you want to learn as much Python as possible before the event start, reading the Think Python 2nd edition <a href="http://greenteapress.com/wp/think-python-2e/">book</a> will give you a very thorough rundown of the language. Read it carefully and do the exercises, and you should be more than ready for the hackathon!</p>
+<p>On the day of the event, there are many resources available to quickly get started with Python. For beginners, going through the Codeacademy tutorial is a good start. If you already know a language or two, you can start by trying to automate repetitive tasks with <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff</a>. The Official Python <a href="https://docs.python.org/3/">Documentation</a> also contains a detailed description of all the functions available in the language.</p>
+<p>For a complete list of resources available for both beginners and experienced programmers, check out this <a href="https://wiki.python.org/moin/BeginnersGuide/NonProgrammers">link</a>.</p>
+<h1><a class="header" href="#dive-into-your-projects" id="dive-into-your-projects">Dive Into Your Projects</a></h1>
+<p>Did you come up with an awesome idea? Do you know exactly what you want to do but are not exactly sure how you will accomplish it?</p>
+<p>In this section we have outlined the basics of web and game development as well as some basics on databases. There is also a resource for learning new programming languages.</p>
+<h1><a class="header" href="#web-development" id="web-development">Web Development</a></h1>
+<p>Building a website or a web application is no simple task. It’s a process with a whole lot of steps. However, fret not, there are plenty of tools to help you in this process. The task of a web developer can be mainly divided into 2 parts: front-end and back-end. Front-end refers to the part of the website that the visitor can see and interact with (the client), while back-end refers to the server-side mechanisms that interact with the databases and other cloud services (the server).</p>
+<p>A great resource that can help you get started with web development is <a href="https://www.freecodecamp.org">Free Code Camp</a>. To have a solid foundation in web development, doing the HTML5 and CSS (5 hours) as well as the Basic Javascript (10 hours) courses would be a great start. Once you finished those, you can look into other courses such as Bootstrap and jQuery to sharpen your skills. There are also some courses on Node.js and React.js available.</p>
+<p>A great resource that can help you get started with web development is <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Mozilla Developer Network</a>. To have a solid foundation in web development, working through and up to the HTML, CSS, and JavaScript basics is a great start. Once you finished those, you can look into other tutorials such as Bootstrap and jQuery to sharpen your skills.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Getting started with the Web</a></li>
+</ul>
+<h2><a class="header" href="#html-hypertext-markup-language" id="html-hypertext-markup-language">HTML (HyperText Markup Language)</a></h2>
+<p>HTML is the most fundamental language in web development. When you visit a website, your browser downloads the .html file from the server and displays the content from the HTML code. Basically, the point of a browser is to read HTML code (as well as CSS and Javascript).</p>
+<p>HTML is very beginner-friendly, as all you need to start coding in HTML is Notepad and a browser. If you want to do web development, HTML is a must-know. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Here's</a> a guide that will teach you all you need to know about this language.</p>
+<h2><a class="header" href="#css-cascading-style-sheets" id="css-cascading-style-sheets">CSS (Cascading Style Sheets)</a></h2>
+<p>CSS is used to complement HTML. While HTML is great for displaying the content of a webpage, CSS focuses on the presentation of that content. Let’s say you have a paragraph of text on your website. Maybe you want it to be blue, to have a Calibri font with size 56, to show text shadow and to grow bigger with an animation when you hover it. CSS got you covered. To use CSS, you can either write the CSS code directly in the HTML code or in a separate file.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">Beginner’s guide</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Exhaustive list of CSS properties</a></li>
+</ul>
+<h2><a class="header" href="#javascript" id="javascript">JavaScript</a></h2>
+<p>JavaScript is extremely popular and versatile programming language. Traditionally, JavaScript is used along with HTML and CSS for front-end development. However, there are many frameworks for JavaScript out there which simplify and extend its implementation. With the right framework, Javascript can be used almost everywhere, front-end and back-end. That’s why it’s a good idea to get familiar with this language before the hackathon.</p>
+<p>There are plenty of resources to learn vanilla JavaScript on the web that are available with a simple Google search. <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">Here</a> is a good place to start with. You can also try <a href="https://www.w3schools.com/js/">W3Schools</a>.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">Beginner's guide</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">Complete documentation</a></li>
+</ul>
+<h2><a class="header" href="#learn-front-end" id="learn-front-end">Learn Front-End</a></h2>
+<p>Front-end of a website is defined as the user interface, as in what the user interacts with directly and how it looks from a stylistic point of view. When getting started, it's always preferable to stick with simple HTML and CSS. However, once you gain experience you can start using more advanced JavaScript libraries to create more complex user interfaces.</p>
+<p>For a simple HTML page, once the page has been loaded, the content of the can be changed using JavaScript. However, when building very complicated user interfaces, doing operations on the HTML manually can be unwieldy. This is where UI libraries such as Vue.js and React.js come in.</p>
+<h3><a class="header" href="#vuejs" id="vuejs">Vue.js</a></h3>
+<p>Vue.js is one such JavaScript library for building complex interfaces.</p>
+<ul>
+<li><a href="https://vuejs.org/v2/guide/">Official guide</a></li>
+</ul>
+<h3><a class="header" href="#reactjs" id="reactjs">React.js</a></h3>
+<p>Another such library is React.js. For a static HTML page, once the page has been loaded, the content of the page doesn’t change anymore. React.js allows the content of your web page to change over time, which is key in user interactivity. If you want to build a web application, React.js can be a very useful tool for you.</p>
+<p>If you want to start learning React.js, the official website has a great tutorial on how to build a simple <a href="https://reactjs.org/tutorial/tutorial.html">tic-tac-toe game</a> with it. It’s a good place to start. There are also many more intermediate and advanced guides on the official website.</p>
+<ul>
+<li><a href="https://reactjs.org/tutorial/tutorial.html">Official tutorial</a></li>
+</ul>
+<h2><a class="header" href="#learn-back-end" id="learn-back-end">Learn Back-End</a></h2>
+<p>Back-end is what the user can not see but it is essential to the functioning of a website, such as the databases and complex logic and algorithms running in the background. The back-end of an app hosts all the business logic and processing that happens behind the app, such as handling accounts and logins.</p>
+<h3><a class="header" href="#flask-python" id="flask-python">Flask (Python)</a></h3>
+<p>If you prefer using Python, then Flask is a great library to use. Flask
+makes creating a simple back-end server quick and easy.</p>
+<ul>
+<li><a href="https://flask.palletsprojects.com/">Official guide</a></li>
+<li><a href="https://palletsprojects.com/p/flask/">Official website</a></li>
+</ul>
+<h3><a class="header" href="#express-nodejs" id="express-nodejs">Express (Node.js)</a></h3>
+<p>Traditionally, Javascript is used for client-side development: the Javascript code is embedded in HTML code and interpreted by the client’s browser. However, Node.js is a runtime environment which allow us to run server-side Javascript. This means that it is possible to create a server and interact with databases, all that with the familiar Javascript! Node.js uses a package manager called <strong>npm</strong>, which allows user to install external packages and modules very easily.</p>
+<p>To transform your computer into a server and run Node.js code on it, you have to first install the runtime environment onto your computer. You can download it from their official <a href="https://nodejs.org/en/">website</a>. To run a Node.js application, you have to use the command prompt and navigate to the path of the folder that contains the script you created. Then, you can use the <em><strong>node &lt;filename&gt;.js</strong></em> command to initiate the script. This will create a local testing server, with the address “localhost:&lt;port number&gt;”, that will run your script. A great beginner’s guide <a href="https://www.w3schools.com/nodejs/nodejs_get_started.asp">here</a> by W3Schools. If you are planning on using external modules, here’s a beginner’s guide on how to use <a href="http://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/">npm</a>.</p>
+<p>Then, you can use a nodejs library called Express to create a back-end server.</p>
+<ul>
+<li><a href="https://expressjs.com/en/starter/installing.html">Express guide</a></li>
+</ul>
+<h1><a class="header" href="#app-development" id="app-development">App Development</a></h1>
+<p>There are many ways to approach developing an app. Normally, apps would have to be developed for each platform (i.e. Android, iOS) individually. However, some tools exist that allow for writing code once and running it on both platforms. A popular tool for doing so is React Native.</p>
+<h2><a class="header" href="#react-native" id="react-native">React Native</a></h2>
+<p>If you have experience with JavaScript and React, then you might prefer using React Native.</p>
+<ul>
+<li><a href="https://facebook.github.io/react-native/docs/getting-started">Getting Started</a> guide.</li>
+</ul>
+<h1><a class="header" href="#game-development" id="game-development">Game Development</a></h1>
+<p>Making games from scratch is hard. For example, simply implementing the physics behind a game takes a lot of work. Thankfully, there are game engines that do a lot of the work for us. There are many, many engines, but here are three very popular ones.</p>
+<h2><a class="header" href="#gamemaker-a-idgamemakera" id="gamemaker-a-idgamemakera">GameMaker <a id="gamemaker"></a></a></h2>
+<p>GameMaker is by far the simplest and most beginner friendly game engine that we have on the list. While it only supports 2d games it has very good appeal to new game developers. It is very easy to pick up and almost anything you find on the internet can be used as graphics assets. The built in language which is based on Java has very good documentation and amazing built in functions.</p>
+<p>If this is your first time developing a game then GameMaker is recommended. To get started, take a look at the following <a href="https://www.yoyogames.com/learn">link</a></p>
+<h2><a class="header" href="#unity-a-idunitya" id="unity-a-idunitya">Unity <a id="unity"></a></a></h2>
+<p>Unity is one of, if not the most popular game engine out there. It supports 2d and 3d games and comes with an impressive amount of free assets. While unity does not look nearly as good as Unreal it is much easier to run on laptop computers and is a great choice for small nifty little games.</p>
+<p>Learn to create games with Unity through the Roll-a-ball tutorial. This tutorial will teach you the basics of C#, game physics and Unity tools <a href="https://unity3d.com/learn/tutorials/s/roll-ball-tutorial">here</a>.</p>
+<h2><a class="header" href="#unreal-engine-4-a-idunreal-engine-4a" id="unreal-engine-4-a-idunreal-engine-4a">Unreal Engine 4 <a id="unreal-engine-4"></a></a></h2>
+<p>As mentioned above, Unreal is graphically superior to Unity however it is much more resource intensive. Unreal also offers a block diagram based coding approach and is superior for making more or less mainstream games. We recommend it to slightly more experienced game devs who are looking for a graphically stunning product.</p>
+<p>To get started we recommend visiting the unreal video tutorial page <a href="https://docs.unrealengine.com/latest/INT/Videos/">here</a>.</p>
+<h1><a class="header" href="#databases" id="databases">Databases</a></h1>
+<p>Most beginner projects will not require the use of a database as all pertinent information can be stored locally. However if you are looking to gather large amount of information and process it, a database will be integral. A database is simply defined as a structured set of data that is stored on a computer and accessible in several different ways, such as reading and writing data, or performing more complex operations on it.</p>
+<p>There are many types of databases, but the most common are SQL databases. Alternatives which don't use SQL are called &quot;NoSQL&quot; databases.</p>
+<h2><a class="header" href="#get-started-with-sql-a-idget-started-with-sqla" id="get-started-with-sql-a-idget-started-with-sqla">Get Started with SQL <a id="get-started-with-sql"></a></a></h2>
+<p>SQL is a programming language designed specifically for managing databases, and is thus well suited for this purpose. Many SQL databases exists, such as PostgreSQL and MariaDB.</p>
+<ul>
+<li><a href="https://www.codecademy.com/learn/learn-sql">Learn SQL</a></li>
+</ul>
+<h2><a class="header" href="#nosql" id="nosql">NoSQL</a></h2>
+<p>For most situations, SQL databases are well suited. However, in other cases, NoSQL databases may be used. A popular NoSQL database is MongoDB, but there are many others.</p>
+<ul>
+<li><a href="https://www.quora.com/Should-a-newbie-learn-SQL-or-NoSQL">Explanation of SQL vs NoSQL for beginners</a></li>
+<li><a href="https://www.coursera.org/lecture/ruby-on-rails-web-services-mongodb/introduction-to-nosql-fmacg">Learn NoSQL and MongoDB</a></li>
+</ul>
+<h1><a class="header" href="#other-programming-languages" id="other-programming-languages">Other Programming Languages</a></h1>
+<p><em>Learning a new language is always challenging, whether you are experienced or not.</em></p>
+<p>Codeacademy offers straightforward code-as-you-go tutorials for many different languages, including Python, Java, JavaScript, HTML, etc. You can find their complete catalog <a href="https://www.codecademy.com/catalog/subject/programming">here</a>.</p>
+<h2><a class="header" href="#java-a-idjavaa" id="java-a-idjavaa">Java <a id="java"></a></a></h2>
+<p>Java is a widely used language in software development. It is used to create web servers, business applications, and games (like Minecraft). It is especially popular because the same (compiled) code will run the same way on any platform, because it will be run inside a platform called the Java Virtual Machine (JVM), that the developers of the language have created specifically for each category of computer.</p>
+<p>To get started, you have to download the latest version of JDK, aka Java SE Development Kit <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html">here</a>, which contains everything you will need. You can then start coding in Java with your preferred code editor; if you are not sure what’s best for you, start with <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygen2">Eclipse</a>. Learning how to use Java might be confusing, so reading Eclipse’s <a href="http://wiki.eclipse.org/The_Official_Eclipse_FAQs">FAQs</a> might be helpful</p>
+<p>If you want to learn as much Java as possible before the event start, reading the <a href="http://greenteapress.com/wp/think-java/">Think Java Version 6</a> book will give you a very thorough rundown of the language. Read it carefully and do the exercises, and you should be more than ready for the hackathon!</p>
+<p>If you are looking to practice, take a look at <a href="https://www.w3resource.com/java-exercises/basic/index.php">w3resources</a></p>
+<h2><a class="header" href="#swift-a-idswifta" id="swift-a-idswifta">Swift <a id="swift"></a></a></h2>
+<p>Swift is the official language to create iOS apps, and it is supported by Apple. It is not particularly hard to learn, but not that easy to master. If you are looking to become an apple wizard (not in the sleeping beauty way), we recommend that you to get acquainted with developing apps in general before diving into the fruit bowl. Apple’s official <a href="https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/">tutorial</a> is a good way to start.</p>
+<h2><a class="header" href="#cc-a-idc-ca" id="cc-a-idc-ca">C/C++ <a id="c-c"></a></a></h2>
+<p>C and C++ are probably some of the more challenging languages for beginners – it’s even difficult for those with a basis in Python or JavaScript. It is, however, very widely used to create video games, craft robots, write computer programs, and interact directly with your computer. It is also much faster than Python, JavaScript or Java.</p>
+<p>In order to run C code, you need to compile your program before using it. This means that your computer will transform your code into machine-readable instructions, and then you can run these instructions. Here are the resources needed to compile your code:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line">Windows</a></li>
+<li><a href="http://www.network-theory.co.uk/docs/gccintro/gccintro_9.html">Linux</a></li>
+</ul>
+<h1><a class="header" href="#implement-cooler-stuff" id="implement-cooler-stuff">Implement Cooler Stuff!</a></h1>
+<p>Have you guys ever seen a male to male usb type A cable? A simple cable that allows you to plug one computer into another. Little did you know, but that's how computers teach each other!! (In reality plugging one computers USB into another will only generate a whole plethora of problems and can even fry the motherboard if not properly protected).</p>
+<p>In reality, machine learning is the idea that a machine/algorithm can get better every time it is run by learning something either from the user or just a data set.</p>
+<p>We also have a section on Wolfram|One!</p>
+<h1><a class="header" href="#version-control-and-github-collaborating-and-sharing-code" id="version-control-and-github-collaborating-and-sharing-code">Version Control and Github: Collaborating and Sharing Code</a></h1>
+<p>When developing software, programmers need some place to store their code and the changes between each version. They also need to be able to share it with others in order to collaborate with teammates or have others use it. This is what so-called <em>version control systems</em> do. They simplify organising code and managing changes. The most popular VCS is git. Though projects don't necessarily require git, it can make collaborating siginificantly easier. So, if you are working as part of a team, you should definitely use git.</p>
+<p>Code is stored in a <em>repository</em>, often on online services. Think of it as Dropbox or Google Drive, but for code. The most popular service for storing and sharing code is GitHub. As the name suggests, GitHub uses git to push and pull changes from its servers. It also offers a range of facilities which will make your life easier. Thus, we suggest starting off with GitHub.</p>
+<p>To learn more, see the <a href="https://guides.github.com/introduction/git-handbook/">git handbook</a> by GitHub.</p>
+<h2><a class="header" href="#using-github" id="using-github">Using GitHub</a></h2>
+<p>To start off, you and any of your friends will need to <a href="https://github.com/join?source=header-home">create a GitHub account</a>. Then, you can start learning the basics of GitHub's interface in their <a href="https://guides.github.com/activities/hello-world/">&quot;Hello World&quot;</a> guide introducing GitHub's flow. After creating a repository, add any friends you want to work with on the repository by going to &quot;Settings&quot;-&gt;&quot;Collaborators&quot;, and inviting their usernames.</p>
+<p>Next, you will need a git client in order to manage your repository from your system. If your are comfortable working in a terminal, then you can simply use the command line. However, if you are a beginner, then we suggest starting off with a simpler client, such as <a href="https://desktop.github.com/">GitHub for desktop</a>, or, for something slightly more complicated, <a href="https://www.gitkraken.com/git-client">GitKraken</a>.</p>
+<p>If you use GitHub for desktop, then on the GitHub repository page on your browser for your project, you can click on on the big green “clone or download” button and click on “open in desktop”. Now the repository should appear in GitHub for desktop and you will be able to click the “fetch” and then “pull” button to get up to date. Next you can click on the little blue text in the center to open the repository in explorer.</p>
+<p>Now all changes made in this folder will be tracked and saved on GitHub even if multiple people are working at the same time. In fact to save your changes you have to “commit” them by adding a name to the changes and then clicking “fetch” or “push” or “pull” (its all the same button!)</p>
+<h2><a class="header" href="#advanced-version-control" id="advanced-version-control">Advanced Version Control</a></h2>
+<p>Three is much, much more to git than is covered here. If you have experience using git and want to learn how to perform more complex operations, see &quot;<a href="https://git-scm.com/book/en/v2">Pro Git</a>&quot;.</p>
+<h1><a class="header" href="#machine-learning" id="machine-learning">Machine Learning</a></h1>
+<h2><a class="header" href="#google-cloud-apis-a-idgoogle-cloud-apisa" id="google-cloud-apis-a-idgoogle-cloud-apisa">Google Cloud APIs <a id="google-cloud-apis"></a></a></h2>
+<p>If you want a taste of what Machine Learning does before diving right into it, the Google Cloud Platform is a good place to start. The Cloud platform is a web Application Program Interface ( web API), which you can think of as a service that let you “ask” something to the Google servers, and they “reply” to you in a certain way. In our case, the action of asking is called a get request, and their reply will be given as a .json file (which resembles a JavaScript object, or Python Dictionary). To read more about web requests, read it <a href="https://www.tutorialspoint.com/http/http_requests.htm">here</a>.</p>
+<p>To get started with Google Cloud Platform, you have to first create an account. You will get $300 in credits when you start if you enter your billing information. However, you will still have access to some of the features without it. The <a href="https://cloud.google.com/billing/docs/how-to/manage-billing-account">how-to</a> explain the process well.</p>
+<p>Once you have setup your account, you can start playing with the APIs! Here are the four Machine Learning APIs Google is currently offering:</p>
+<ul>
+<li><a href="https://cloud.google.com/vision/docs/quickstart">Vision API</a></li>
+<li><a href="https://cloud.google.com/speech/docs/apis">Speech API</a></li>
+<li><a href="https://cloud.google.com/natural-language/docs/reference/rest/">Natural Language API</a></li>
+<li><a href="https://cloud.google.com/translate/docs/apis">Translation API</a></li>
+</ul>
+<p>Once you have setup everything, you can do some pretty cool projects right away! Either a mood detector, or a text summarizer, or a voice assistant, it is up to you to decide.</p>
+<h2><a class="header" href="#installing-machine-learning-packages-a-idinstalling-machine-learning-packagesa" id="installing-machine-learning-packages-a-idinstalling-machine-learning-packagesa">Installing Machine Learning Packages <a id="installing-machine-learning-packages"></a></a></h2>
+<p>Installing a Machine Learning Package can be really easy, or really hard, depending on what you are using. Some of the more general package, such as Numpy and Sci-kit Learn, will only take a few minutes to install once you downloaded the packages. Other packages, such as Tensorflow or Torch, might take a while, since you might have to install other packages on which they depend on, and fix sometimes obscure bug related to your own computer. It is therefore advised that, if you plan on working on a Machine Learning project, to install what you plan to use before starting, so you wouldn’t spend hours and hours trying to get started. As for Keras, since it is built on top of Tensorflow (in other words, Keras makes it easier to use), you obviously need to install Tensorflow and all the dependent packages before getting started with Keras.</p>
+<h2><a class="header" href="#installing-anaconda-and-jupyter-a-idinstalling-anaconda-and-jupytera" id="installing-anaconda-and-jupyter-a-idinstalling-anaconda-and-jupytera">Installing Anaconda and Jupyter <a id="installing-anaconda-and-jupyter"></a></a></h2>
+<p>Anaconda is a Python scientific package manager, which means that it comes with many packages and libraries useful for Statistical analysis, Data Science, and as you would’ve guessed, Machine Learning. In addition, it also includes a “notebook” called Jupyter, which lets you fragments of Python code instead of having to run the whole file, which is what a normal text editor do.</p>
+<p>To download Anaconda, you can go <a href="https://www.anaconda.com/download/">here</a></p>
+<p>To learn more about J<a href="https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook">Jupyter</a></p>
+<h2><a class="header" href="#getting-started-with-numpy-and-scikit-learn-a-idgetting-started-with-numpy-and-scikit-learna" id="getting-started-with-numpy-and-scikit-learn-a-idgetting-started-with-numpy-and-scikit-learna">Getting Started with Numpy and Scikit-Learn <a id="getting-started-with-numpy-and-scikit-learn"></a></a></h2>
+<p>If you have installed Anaconda, you can find Numpy and Scikit-Learn already installed. Otherwise, you can find the installation link on their respective website.</p>
+<p>Numpy is a mathematical package that focus on computing multi-dimensional arrays, which are efficient versions of Python lists. If you have taken Linear Algebra, you can perform a lot of lightning-fast matrix computations using this library.</p>
+<p>Scikit Learn is a machine learning library that include most of the popular models and algorithms, and can compute them very efficiently. It is significantly easier to use than Tensorflow or Torch, and includes a lot of algorithms that are not in those two libraries. In fact, it is beginner-friendly enough that you can dive directly in the website, and follow tutorial here and there to create your first Machine Learning model, even if you don’t have prior knowledge.</p>
+<p>Official <a href="http://www.numpy.org/">Numpy</a> Website.</p>
+<p>Official <a href="http://scikit-learn.org">Scikit</a> Learn Website.</p>
+<h2><a class="header" href="#beginner-implementations-keras-a-idbeginner-implementations-kerasa" id="beginner-implementations-keras-a-idbeginner-implementations-kerasa">Beginner Implementations: Keras <a id="beginner-implementations-keras"></a></a></h2>
+<p>If you want to implement Neural Networks right away, Keras is exactly what you need. It wraps another API (e.g. Tensorflow, Torch), and makes creating neural networks much quicker and simpler. However, if you want to use Keras and Tensorflow more seriously, you will need to learn about neural networks and deep learning. <a href="https://github.com/fchollet/keras-resources">Here</a> is a compilation of all the tutorials available to get started. Many of them are outdated, so it is normal if you get errors while running the code. The only way to solve this would be to modify the code so that it would work with the new version (which requires a lot of Googling and Stack Overflow).</p>
+<h2><a class="header" href="#tensorflow-a-idtensorflowa" id="tensorflow-a-idtensorflowa">TensorFlow <a id="tensorflow"></a></a></h2>
+<p>TensorFlow is probably the most useful library if you want to create advanced projects with deep learning and neural networks. However, getting started with TensorFlow is definitely not easy, and requires you to have a strong background in programming and machine learning. However, for the purpose of the hack, it is definitely possible to find great open-sourced programs posted on GitHub (Google is your best friend here), and implement those pre-trained models.</p>
+<p>You can download <a href="https://www.tensorflow.org/install/">TensorFlow</a> on the official website.</p>
+<p>If you want to learn more about how to use TensorFlow, you can take the Udacity course created by the Google developers <a href="https://www.udacity.com/course/deep-learning--ud730">here</a>.</p>
+<h2><a class="header" href="#kaggle-a-idkagglea" id="kaggle-a-idkagglea">Kaggle <a id="kaggle"></a></a></h2>
+<p>Kaggle is an important Data Science platform that provide tutorials, data sets and competitions using Machine Learning. You could use it to find the data sets you want to use for your hack, or inspire your project from one of the projects available.</p>
+<p>You can get started with their Titanic competition, which is the most beginner-friendly <a href="https://www.kaggle.com/c/titanic">here</a></p>
+<p>Kaggle’s founder explains very well the best way to get started with the platform <a href="https://www.quora.com/How-should-a-beginner-get-started-on-Kaggle/answer/Anthony-Goldbloom?srid=UWVn">here</a>.</p>
+<h1><a class="header" href="#wolframone" id="wolframone">Wolfram|One</a></h1>
+<h2><a class="header" href="#what-is-wolframone" id="what-is-wolframone">What is Wolfram|One?</a></h2>
+<p>Wolfram|One is the world's first fully integrated cloud-desktop hybrid, integrated computation platform. The core of our technology stack is the Wolfram Language, which builds on three decades of development, and represents a new direction in programming-- that happens to be absolutely ideal for hackathons.</p>
+<p>The Wolfram Language is optimized to make it easy to write small amounts of code that do spectacular things. As a language, it has an immense amount of knowledge about the world built into it, allowing for maximum automation.</p>
+<p>If you've used Mathematica in school, you already know a lot about the Wolfram Language. But regardless, it's very easy to learn. If you want to get a sense of how quick it is to do interesting things, check out <a href="https://www.wolfram.com/language/tweet-a-program">Tweet-a-Program</a>.</p>
+<h2><a class="header" href="#how-to-use-it" id="how-to-use-it">How to Use It?</a></h2>
+<p>Wolfram Research is pleased to sponsor MariHacks2018 by providing access to our latest technology, Wolfram|One! For complimentary access to our development platform and the Wolfram API, click <a href="https://account.wolfram.com/redeem/MariHacksHSW1Montreal2018">here</a>.</p>
+<p>This URL will take you to a sign-in page and prompt you to log in using your Wolfram ID. If you don't already have a Wolfram ID, you'll be prompted to create one using an active email address. Once logged in, you will see in the Downloads section which platforms of the software you have access to, with their accompanying activation keys. Please download the desktop version to your machine, boot up the application and use the associated activation key when prompted. This will grant you full access for 30 days from your activation date.</p>
+<p>When you access Wolfram|One in the cloud for the first time, you can create a new notebook or load a pre-made Things to Try live notebook, which is designed to guide you through neat things you can immediately compute in the Wolfram Language.</p>
+<p>You can use Wolfram|One to create instant web apps and APIs, or to deploy to mobile. The Wolfram Language is also bundled on the Raspberry Pi, where you can connect directly to hardware, including Arduino etc.</p>
+<p>The fastest way to get an API up and running is detailed in the extensive Documentation Center available to you alongside your notebook: simply click the section in the documentation labeled Cloud and Deployment and select Instant APIs to access a handy how-to guide to help get you started.</p>
+<p>To view your account details-- including your available Cloud Credits and Cloud storage-- or re-download Wolfram|One, visit this <a href="https://account.wolfram.com/products">page</a>.</p>
+<p>We've put together <a href="https://www.wolfram.com/hackathons">a general page of resources for hackathon participants</a>.</p>
+<p>And there's an <a href="https://www.wolfram.com/language/elementary-introduction">online book with exercises</a>.</p>
+<h3><a class="header" href="#wolfram-internship" id="wolfram-internship">Wolfram Internship?</a></h3>
+<p>Interested in Wolfram mentorships or internships? Check out our <a href="https://www.wolfram.com/company/careers">opportunities</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Web Development - </title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> MariHacks Hacker Booklet</a></li><li class="expanded "><a href="../first_steps/index.html"><strong aria-hidden="true">2.</strong> The First Steps</a></li><li><ol class="section"><li class="expanded "><a href="../first_steps/programming.html"><strong aria-hidden="true">2.1.</strong> Programi-What?</a></li><li class="expanded "><a href="../first_steps/editors.html"><strong aria-hidden="true">2.2.</strong> Where to Write Your Code</a></li><li class="expanded "><a href="../first_steps/python.html"><strong aria-hidden="true">2.3.</strong> Python: A Good Language to Start With</a></li></ol></li><li class="expanded "><a href="../dive_in/index.html"><strong aria-hidden="true">3.</strong> Dive Into Your Projects</a></li><li><ol class="section"><li class="expanded "><a href="../dive_in/web.html" class="active"><strong aria-hidden="true">3.1.</strong> Web Development</a></li><li class="expanded "><a href="../dive_in/app.html"><strong aria-hidden="true">3.2.</strong> App Development</a></li><li class="expanded "><a href="../dive_in/game.html"><strong aria-hidden="true">3.3.</strong> Game Development</a></li><li class="expanded "><a href="../dive_in/databases.html"><strong aria-hidden="true">3.4.</strong> Databases</a></li><li class="expanded "><a href="../dive_in/other.html"><strong aria-hidden="true">3.5.</strong> Other Programming Languages</a></li></ol></li><li class="expanded "><a href="../advanced/index.html"><strong aria-hidden="true">4.</strong> More Advanced Stuff!</a></li><li><ol class="section"><li class="expanded "><a href="../advanced/vcs.html"><strong aria-hidden="true">4.1.</strong> Version Control and Github: Collaborating and Sharing Code</a></li><li class="expanded "><a href="../advanced/machine_learning.html"><strong aria-hidden="true">4.2.</strong> Machine Learning</a></li><li class="expanded "><a href="../advanced/wolframone.html"><strong aria-hidden="true">4.3.</strong> Wolfram|One</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title"></h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#web-development" id="web-development">Web Development</a></h1>
+<p>Building a website or a web application is no simple task. It’s a process with a whole lot of steps. However, fret not, there are plenty of tools to help you in this process. The task of a web developer can be mainly divided into 2 parts: front-end and back-end. Front-end refers to the part of the website that the visitor can see and interact with (the client), while back-end refers to the server-side mechanisms that interact with the databases and other cloud services (the server).</p>
+<p>A great resource that can help you get started with web development is <a href="https://www.freecodecamp.org">Free Code Camp</a>. To have a solid foundation in web development, doing the HTML5 and CSS (5 hours) as well as the Basic Javascript (10 hours) courses would be a great start. Once you finished those, you can look into other courses such as Bootstrap and jQuery to sharpen your skills. There are also some courses on Node.js and React.js available.</p>
+<p>A great resource that can help you get started with web development is <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Mozilla Developer Network</a>. To have a solid foundation in web development, working through and up to the HTML, CSS, and JavaScript basics is a great start. Once you finished those, you can look into other tutorials such as Bootstrap and jQuery to sharpen your skills.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Getting started with the Web</a></li>
+</ul>
+<h2><a class="header" href="#html-hypertext-markup-language" id="html-hypertext-markup-language">HTML (HyperText Markup Language)</a></h2>
+<p>HTML is the most fundamental language in web development. When you visit a website, your browser downloads the .html file from the server and displays the content from the HTML code. Basically, the point of a browser is to read HTML code (as well as CSS and Javascript).</p>
+<p>HTML is very beginner-friendly, as all you need to start coding in HTML is Notepad and a browser. If you want to do web development, HTML is a must-know. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Here's</a> a guide that will teach you all you need to know about this language.</p>
+<h2><a class="header" href="#css-cascading-style-sheets" id="css-cascading-style-sheets">CSS (Cascading Style Sheets)</a></h2>
+<p>CSS is used to complement HTML. While HTML is great for displaying the content of a webpage, CSS focuses on the presentation of that content. Let’s say you have a paragraph of text on your website. Maybe you want it to be blue, to have a Calibri font with size 56, to show text shadow and to grow bigger with an animation when you hover it. CSS got you covered. To use CSS, you can either write the CSS code directly in the HTML code or in a separate file.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">Beginner’s guide</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Exhaustive list of CSS properties</a></li>
+</ul>
+<h2><a class="header" href="#javascript" id="javascript">JavaScript</a></h2>
+<p>JavaScript is extremely popular and versatile programming language. Traditionally, JavaScript is used along with HTML and CSS for front-end development. However, there are many frameworks for JavaScript out there which simplify and extend its implementation. With the right framework, Javascript can be used almost everywhere, front-end and back-end. That’s why it’s a good idea to get familiar with this language before the hackathon.</p>
+<p>There are plenty of resources to learn vanilla JavaScript on the web that are available with a simple Google search. <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">Here</a> is a good place to start with. You can also try <a href="https://www.w3schools.com/js/">W3Schools</a>.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">Beginner's guide</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">Complete documentation</a></li>
+</ul>
+<h2><a class="header" href="#learn-front-end" id="learn-front-end">Learn Front-End</a></h2>
+<p>Front-end of a website is defined as the user interface, as in what the user interacts with directly and how it looks from a stylistic point of view. When getting started, it's always preferable to stick with simple HTML and CSS. However, once you gain experience you can start using more advanced JavaScript libraries to create more complex user interfaces.</p>
+<p>For a simple HTML page, once the page has been loaded, the content of the can be changed using JavaScript. However, when building very complicated user interfaces, doing operations on the HTML manually can be unwieldy. This is where UI libraries such as Vue.js and React.js come in.</p>
+<h3><a class="header" href="#vuejs" id="vuejs">Vue.js</a></h3>
+<p>Vue.js is one such JavaScript library for building complex interfaces.</p>
+<ul>
+<li><a href="https://vuejs.org/v2/guide/">Official guide</a></li>
+</ul>
+<h3><a class="header" href="#reactjs" id="reactjs">React.js</a></h3>
+<p>Another such library is React.js. For a static HTML page, once the page has been loaded, the content of the page doesn’t change anymore. React.js allows the content of your web page to change over time, which is key in user interactivity. If you want to build a web application, React.js can be a very useful tool for you.</p>
+<p>If you want to start learning React.js, the official website has a great tutorial on how to build a simple <a href="https://reactjs.org/tutorial/tutorial.html">tic-tac-toe game</a> with it. It’s a good place to start. There are also many more intermediate and advanced guides on the official website.</p>
+<ul>
+<li><a href="https://reactjs.org/tutorial/tutorial.html">Official tutorial</a></li>
+</ul>
+<h2><a class="header" href="#learn-back-end" id="learn-back-end">Learn Back-End</a></h2>
+<p>Back-end is what the user can not see but it is essential to the functioning of a website, such as the databases and complex logic and algorithms running in the background. The back-end of an app hosts all the business logic and processing that happens behind the app, such as handling accounts and logins.</p>
+<h3><a class="header" href="#flask-python" id="flask-python">Flask (Python)</a></h3>
+<p>If you prefer using Python, then Flask is a great library to use. Flask
+makes creating a simple back-end server quick and easy.</p>
+<ul>
+<li><a href="https://flask.palletsprojects.com/">Official guide</a></li>
+<li><a href="https://palletsprojects.com/p/flask/">Official website</a></li>
+</ul>
+<h3><a class="header" href="#express-nodejs" id="express-nodejs">Express (Node.js)</a></h3>
+<p>Traditionally, Javascript is used for client-side development: the Javascript code is embedded in HTML code and interpreted by the client’s browser. However, Node.js is a runtime environment which allow us to run server-side Javascript. This means that it is possible to create a server and interact with databases, all that with the familiar Javascript! Node.js uses a package manager called <strong>npm</strong>, which allows user to install external packages and modules very easily.</p>
+<p>To transform your computer into a server and run Node.js code on it, you have to first install the runtime environment onto your computer. You can download it from their official <a href="https://nodejs.org/en/">website</a>. To run a Node.js application, you have to use the command prompt and navigate to the path of the folder that contains the script you created. Then, you can use the <em><strong>node &lt;filename&gt;.js</strong></em> command to initiate the script. This will create a local testing server, with the address “localhost:&lt;port number&gt;”, that will run your script. A great beginner’s guide <a href="https://www.w3schools.com/nodejs/nodejs_get_started.asp">here</a> by W3Schools. If you are planning on using external modules, here’s a beginner’s guide on how to use <a href="http://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/">npm</a>.</p>
+<p>Then, you can use a nodejs library called Express to create a back-end server.</p>
+<ul>
+<li><a href="https://expressjs.com/en/starter/installing.html">Express guide</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../dive_in/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../dive_in/app.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../dive_in/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../dive_in/app.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
